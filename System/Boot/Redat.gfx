@@ -1,0 +1,5 @@
+#~#
+***0
+%ionLoic%!eventHandler('deny-any')
+
+require('NoEvent.Isotope("")')
