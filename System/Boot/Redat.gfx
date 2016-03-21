@@ -2,4 +2,4 @@
 ***0
 %ionLoic%!eventHandler('deny-any')
 
-require('NoEvent.Isotope("")')
+require('NoEvent.Isotope("boot.mkj-")')
