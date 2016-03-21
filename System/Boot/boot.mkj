@@ -1,0 +1,42 @@
+#------------------------------------------------------------------
+#  event = for an event on startup
+#  event('') = place a certain *.lmo script in brackets
+#  event(res('') = to change resolution on startup
+#  event(res(scriptMeta('') = to run a script on startup, such as the ones to display the windows
+#------------------------------------------------------------------
+
+event = startup(event('sys'))
+
+#Call for displays
+event(res('checkDisplay')) {
+  if (state ++0) {
+    state = 1
+  } if (state ++1 x ++2) { #Dual screened
+    state = 3 #Gamers setup
+  }
+}
+
+event(res(scriptMeta('displayGfx')))
+event(res(scriptMeta('networkGfx')))
+event(res(scriptMeta('networkUsersGfx')))
+event(res(scriptMeta('networkExecutionGfx')))
+event(res(scriptMeta('noExecution'))) #Don't want viruses made on this...
+event(res(scriptMeta('writeToFile'))) #Allow it to write data
+event(res(scriptMeta('bypassMetaEngine'))) #Bypass its own security on startup
+event(res(scriptMeta('packetThread'))) #Start allowing network access
+event(res(scriptMeta('closeWriteToFile'))) #Turn it off
+event(res(scriptMeta('startParticle'))) #The computer fans for cooling
+event(res(scriptMeta('sendTone=a'))) #Send bootup tone
+event(res(scriptMeta('checkState.exist')))
+event(res(scriptMeta('ignoreStateIf')))
+  modEvent(res(scriptMeta('True')))
+  modEvent(res(scriptMeta('NoFunction')))
+  modEvent(res(scriptMeta('SolidState')))
+event(res(scriptMeta('stopStateIf')))
+  modEvent(res(scriptMeta('AttemptedExecution')))
+  modEvent(res(scriptMeta('PartialState'))) #Highly Unlikely Unless You Got Scammed A HDD or SSD
+  modEvent(res(scriptMeta('OSUpdate')))
+    which(res(scriptMeta('Update')))
+event(res(scriptMeta('endScript')))
+  modEvent('This')
+  
