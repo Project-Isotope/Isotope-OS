@@ -2,4 +2,10 @@
 ***0
 %ionLoic%!eventHandler('deny-any')
 
-require('NoEvent.Isotope("boot.mkj-")')
+require('NoEvent.Isotope("boot.mkj-21")')
+  eventHandler('callEvent')
+    startEvent('Thread("32")')
+  eventHandler('clearAt')
+    clearAt('Thread("!=32546750000000")')
+  eventHandler('Allocate')
+    allocateNew('IP("***1")')
