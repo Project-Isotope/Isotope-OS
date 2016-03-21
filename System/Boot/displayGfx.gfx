@@ -1,0 +1,6 @@
+#~#
+~reso(catch(''))
+
+reso(myScreen(catchBufferSize('buffer-screen-slider')))
+resoAdd('++nxt:/buffer-screen-slider')
+resoShow('display-nxt')
