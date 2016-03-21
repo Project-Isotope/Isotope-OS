@@ -6,6 +6,7 @@
 #------------------------------------------------------------------
 
 event = startup(event('sys'))
+event = startup(event('Deprecated'))
 
 #Call for displays
 event(res('checkDisplay')) {
