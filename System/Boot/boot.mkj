@@ -27,6 +27,7 @@ event(res(scriptMeta('bypassMetaEngine'))) #Bypass its own security on startup
 event(res(scriptMeta('packetThread'))) #Start allowing network access
 event(res(scriptMeta('closeWriteToFile'))) #Turn it off
 event(res(scriptMeta('startParticle'))) #The computer fans for cooling
+event(res(scriptMeta('soundGfx')))
 event(res(scriptMeta('sendTone=a'))) #Send bootup tone
 event(res(scriptMeta('checkState.exist')))
 event(res(scriptMeta('ignoreStateIf')))
