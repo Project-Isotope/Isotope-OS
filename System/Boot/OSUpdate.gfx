@@ -3,3 +3,5 @@ onSysUpdate(user(host('NAME').updateOS(bgOnBoot('FUNCTION')).closeDist(user(host
   ifArgs(incorrect(hotfix('?true?false').thisEvent(handle('subModuleInit'))))
     forIf(event('0'))
       endTask('')
+
+requireUpdateTask('FALSE')
