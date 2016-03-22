@@ -1,2 +1,15 @@
 #~#
-true
+#arg('')
+
+arg(sysFile('Delete'))
+  endIf(fileName('Boot'))
+    bypassIf(fileName(not('Boot')))
+  endIf(fileName('System'))
+    bypassIf(fileName(not('System')))
+  endIf(fileExt('gfx'))
+    bypassIf(fileName(not('gfx')))
+
+arg(otherFile('Delete'))
+  endIf(fileName(protect('1')))
+    bypassIf(fileName(protect('0')))
+  
