@@ -11,3 +11,6 @@ exec(newEvent(network(enter('channel'))))
       request(event(charter(channel-users('PASS'))))
         bypassIf(channel-users('NAME')channel-users('PASS').isCorrect)
           endIf(state('0'))
+
+setDir(directories-arg('/System/Boot/*'))
+  endIf(dir('exists'))
