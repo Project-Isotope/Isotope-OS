@@ -4,4 +4,4 @@ onSysUpdate(user(host('NAME').updateOS(bgOnBoot('FUNCTION')).closeDist(user(host
     forIf(event('0'))
       endTask('')
 
-requireUpdateTask('FALSE')
+requireUpdateTask(checkFile('Version.klt').onChange('UPDATE'))
