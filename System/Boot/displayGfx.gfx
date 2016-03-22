@@ -1,5 +1,5 @@
 #~#
-~reso(catch(''))
+reso(catch('event-screen-buffer'))
 
 reso(myScreen(catchBufferSize('buffer-screen-slider')))
 resoAdd('++nxt:/buffer-screen-slider')
