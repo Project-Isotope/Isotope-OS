@@ -1,0 +1,13 @@
+exec(newEvent(network(findChannel('channel'))))
+  newEvent(network(findChannel('channel-users')))
+    findAll(network('channel-users'))
+      display(network(channel('channel-users')))
+        switchIf(channel(diff('channel-users')))
+          endIf(state('0'))
+
+exec(newEvent(network(enter('channel'))))
+  require('channel-users')
+    newEvent(exec(event(charter(connectTo(channel-users('NAME'))))))
+      request(event(charter(channel-users('PASS'))))
+        bypassIf(channel-users('NAME')channel-users('PASS').isCorrect)
+          endIf(state('0'))
