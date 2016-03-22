@@ -1,0 +1,7 @@
+callFor(event(findUsers('channel')))
+  if(state(equalTo('1')))
+    callFor('channel-user')
+      endIf(state('0'))
+  if(state(equalTo('0')))
+    endEvent('findUsers')
+      endIf(state('1'))
