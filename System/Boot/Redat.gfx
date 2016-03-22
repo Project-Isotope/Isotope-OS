@@ -12,3 +12,6 @@ require('NoEvent.Isotope("boot.mkj-21")')
   eventHandler('Allocate')
     allocateNew('IP("***1")')
       endIf(event(returned('0')))
+
+event(parse(newEvent('channel-redat-gfx')))
+  endIf(event(returned('0')))
