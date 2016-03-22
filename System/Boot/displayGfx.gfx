@@ -4,3 +4,5 @@ reso(catch('event-screen-buffer'))
 reso(myScreen(catchBufferSize('buffer-screen-slider')))
 resoAdd('++nxt:/buffer-screen-slider')
 resoShow('display-nxt')
+
+resoArg(add(reso(resoTXT(newEvent(eventCache(catchFunc(thisLine(eval('displayGfx')).standardLine('TRUE'))))))))
