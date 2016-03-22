@@ -18,27 +18,47 @@ event(res('checkDisplay')) {
 }
 
 event(res(scriptMeta('displayGfx')))
+  endIf(state(returned('0')))
 event(res(scriptMeta('networkGfx')))
+  endIf(state(returned('0')))
 event(res(scriptMeta('networkUsersGfx')))
+  endIf(state(returned('0')))
 event(res(scriptMeta('networkExecutionGfx')))
+  endIf(state(returned('0')))
 event(res(scriptMeta('noExecution'))) #Don't want viruses made on this...
+  endIf(state(returned('0')))
 event(res(scriptMeta('writeToFile'))) #Allow it to write data
+  endIf(state(returned('0')))
 event(res(scriptMeta('bypassMetaEngine'))) #Bypass its own security on startup
+  endIf(state(returned('0')))
 event(res(scriptMeta('packetThread'))) #Start allowing network access
+  endIf(state(returned('0')))
 event(res(scriptMeta('closeWriteToFile'))) #Turn it off
+  endIf(state(returned('0')))
 event(res(scriptMeta('startParticle'))) #The computer fans for cooling
+  endIf(state(returned('0')))
 event(res(scriptMeta('soundGfx')))
+  endIf(state(returned('0')))
 event(res(scriptMeta('sendTone=a'))) #Send bootup tone
+  endIf(state(returned('0')))
 event(res(scriptMeta('checkState.exist')))
+  endIf(state(returned('0')))
 event(res(scriptMeta('ignoreStateIf')))
   modEvent(res(scriptMeta('True')))
+    endIf(state(returned('0')))
   modEvent(res(scriptMeta('NoFunction')))
+    endIf(state(returned('0')))
   modEvent(res(scriptMeta('SolidState')))
+    endIf(state(returned('0')))
 event(res(scriptMeta('stopStateIf')))
   modEvent(res(scriptMeta('AttemptedExecution')))
+    endIf(state(returned('0')))
   modEvent(res(scriptMeta('PartialState'))) #Highly Unlikely Unless You Got Scammed A HDD or SSD
+    endIf(state(returned('0')))
   modEvent(res(scriptMeta('OSUpdate')))
     which(res(scriptMeta('Update')))
+      endIf(state(returned('0')))
 event(res(scriptMeta('endScript')))
   modEvent('This')
-  
+    endIf(state(returned('0')))
+    
