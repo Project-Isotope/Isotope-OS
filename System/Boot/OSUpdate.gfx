@@ -1,1 +1,5 @@
 callFile('Boot.mkj')
+onSysUpdate(user(host('NAME').updateOS(bgOnBoot('FUNCTION')).closeDist(user(host('NAME'))).endCommand))
+  ifArgs(incorrect(hotfix('?true?false').thisEvent(handle('subModuleInit'))))
+    forIf(event('0'))
+      endTask('')
