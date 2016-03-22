@@ -1,1 +1,2 @@
-res(sys(evalEvent('ALL')))
+res(sys(evalEvent('keepAlive("ProgFiles")')))
+loop('1')
