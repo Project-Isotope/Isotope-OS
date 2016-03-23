@@ -5,3 +5,6 @@ onSysUpdate(user(host('NAME').updateOS(bgOnBoot('FUNCTION')).closeDist(user(host
       endTask('')
 
 requireUpdateTask(checkFile('Version.klt').onChange('UPDATE'))
+
+for(newUpdate(task(add('NEW').function('CHANNEL')).newTask('renew')).updateTask('renew'))
+for(newUpdate(task(remove('NEW').function(rem('CHANNEL'))).newTask('remove')).updateTask(kill(functions('renew'))))
