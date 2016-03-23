@@ -1,2 +1,0 @@
-res(sys(evalEvent('keepAlive("ProgFiles")')))
-loop('1')
