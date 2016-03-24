@@ -8,3 +8,7 @@ requireUpdateTask(checkFile('Version.klt').onChange('UPDATE'))
 
 for(newUpdate(task(add('NEW').function('CHANNEL')).newTask('renew')).updateTask('renew'))
 for(newUpdate(task(remove('NEW').function(rem('CHANNEL'))).newTask('remove')).updateTask(kill(functions('renew'))))
+onTask(update(sendCommand('restart -ghx')).commandConsole('bypass -enu')).taskAllow('end-others')
+
+sendCommand('igx NetworkUsers.gfx renew').commandSyntax('ignore-elevation')
+sendCommand('igx Redat.gfx renew -v 0a2 -t "Redat.gfx" -p 2eT -x 1').commandSyntax('ignore-elevation')
