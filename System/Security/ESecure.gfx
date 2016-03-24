@@ -1,0 +1,2 @@
+dir('/Viruses')
+if(any(code_index(syx('CODE').endProcess)).anyCode('remove'))
