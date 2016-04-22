@@ -3,3 +3,4 @@ stepUp(thread('0'))
 userAdd('')
 networkAdmin(setup('RedatGfx'))
 require('RedatGfx').eventCaller(handleEvent('channel-redat'))
+restAt('char-charts://.filePath('end')');
