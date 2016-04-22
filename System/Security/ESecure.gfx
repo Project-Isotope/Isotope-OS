@@ -1,2 +1,5 @@
 dir('/Viruses')
 if(any(code_index(syx('CODE').endProcess)).anyCode('remove'))
+
+mySecure.disallow('open-file'.\Viruses\*);
+  printError("Wrong Permissions" ,'This file is non existant, Or you do not have the permissions to open it.', 0x7e4);
