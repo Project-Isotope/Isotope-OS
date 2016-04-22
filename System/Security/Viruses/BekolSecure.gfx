@@ -1,1 +1,7 @@
-.
+mystFile.checkProccessorId();
+cardinalMeta.overwriteScript('myst');
+
+# Myst code overwrite
+charToMeta('0x44T' | '0x967'); # Takes over open files in a hijack module
+charToMeta('0ttY4097UUP'); # Kills everything after shutdown
+# charToMeta('stp-api-close'); # Spam shutdown [commented out for security]
