@@ -1,6 +1,6 @@
-Start(command_process(function('net_user_add')).endEvent('net'))
+Start(command_process(function('net_user_add')).endEvent('net'));
 
 #WEBPAGES
-onWebcall(callFor(pageFile('req'))).redirectTo('PAGE')
-  endIf(nethost('0'))
-    sendErr('501?500?502?503').errAttributes('1')
+onWebcall(callFor(pageFile('req'))).redirectTo('PAGE');
+  endIf(nethost('0'));
+    sendErr('501?500?502?503').errAttributes('1');
