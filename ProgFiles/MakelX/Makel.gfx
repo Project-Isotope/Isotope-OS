@@ -2,5 +2,11 @@ Start(command_process(function('net_user_add')).endEvent('net'));
 
 #WEBPAGES
 onWebcall(callFor(pageFile('req'))).redirectTo('PAGE');
-  endIf(nethost('0'));
-    sendErr('501?500?502?503').errAttributes('1');
+  requestDnsServer(server, pageFile, PAGE);
+    Start(command_process(function('webCall')).beginEvent('DNS'));
+      pageFile.showRequest(PAGE, server);
+        for(server == 1).hasProperties(PAGE, panel, panel, panel, header, content, panel, footer, content, panel, panel, panel);
+      <
+    <
+  <
+<
