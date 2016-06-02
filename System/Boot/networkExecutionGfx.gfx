@@ -12,5 +12,13 @@ exec(newEvent(network(enter('channel'))))
         bypassIf(channel-users('NAME')channel-users('PASS').isCorrect)
           endIf(state('0'))
 
+exec(newEvent(network(findChannel('drive'))))
+  newEvent(network(findChannel('drive-users')))
+    findAll(network('driver-users'))
+      exec('exec(newEvent(network(findChannel('channel'))))')
+      exec('exec(newEvent(network(enter('channel-users'))))')
+        display(network(channel('channel' || 'channel-users' | this.drive)))
+        
+        
 setDir(directories-arg('/System/Boot/*'))
   endIf(dir('exists'))
